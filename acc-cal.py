@@ -119,4 +119,7 @@ def linear_calibration(calibration_time=5, axis=2):
     
     return m, b
 
-print(linear_calibration())
+while True:
+    get_linear_acceleration
+    time.sleep(0.5)
+#print(linear_calibration())
