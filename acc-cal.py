@@ -119,7 +119,15 @@ def linear_calibration(calibration_time=5, axis=0):
     
     return m, b
 
+
+
+def get_linear_accelerationrun():
+    accelerometer_data = mpu6050.get_accel_data()
+    ax= accelerometer_data.get('x')*8.8 -1.1
+    ay= accelerometer_data.get('y')
+    az= accelerometer_data.get('z')
+    return ax, ay, az
 #while True:
-#    print(get_linear_acceleration())
+#    print(get_linear_accelerationrun())
 #    time.sleep(0.5)
 print(linear_calibration())
