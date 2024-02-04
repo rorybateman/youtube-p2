@@ -20,7 +20,7 @@ def get_linear_acceleration():
     az= accelerometer_data.get('z')
     return ax, ay, az
 
-def linear_calibration(calibration_time=5, axis=2):
+def linear_calibration(calibration_time=5, axis=0):
     
     """
         Description: This is a function to get the offset values
