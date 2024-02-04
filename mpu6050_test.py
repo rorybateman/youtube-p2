@@ -26,7 +26,9 @@ while True:
     # Print the sensor data
     print("Accelerometer data:", accelerometer_data)
     print("Gyroscope data:", gyroscope_data)
-    print("Gyroscope data:", type(gyroscope_data))
+    print("Gyroscope data:", gyroscope_data[0])
+    print("Gyroscope data:", gyroscope_data[1])
+    print("Gyroscope data:", gyroscope_data[2])
     print("Temp:", temperature)
 
     # Wait for 1 second
