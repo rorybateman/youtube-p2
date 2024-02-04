@@ -30,7 +30,7 @@ def get_gyro():
     gz= gyroscope_data.get('z')
     return gx, gy, gz
 
-while true:
+while True:
   print(get_gyro())
   time.sleep(0.5)
 #test
