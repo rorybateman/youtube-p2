@@ -1,10 +1,10 @@
-from imu import MPU6050
+import mpu6050
 from machine import Pin, I2C
 import time
 from time import sleep
 
 i2c = I2C(0, sda=Pin(0), scl=Pin(1), freq=400000)
-imu = MPU6050(i2c)
+imu = mpu6050(i2c)
 t0 = time.time()
 # Wait for MPU to Settle
 settling_time = 4
@@ -37,7 +37,7 @@ def gyro_calibration(calibration_time=10):
             accurate readings!
     """
     print('--' * 25)
-    print('Beginning Gyro Calibration - Do not move the MPU6050')
+    print('Beginning Gyro Calibration - Do not move the mpu6050')
     
     # placeholder for the average of tuples in mpu_gyro_array
     offsets = [0, 0, 0]
