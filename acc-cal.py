@@ -127,7 +127,8 @@ def get_linear_accelerationrun():
     ay= accelerometer_data.get('y')
     az= accelerometer_data.get('z')
     return ax, ay, az
-#while True:
-#    print(get_linear_accelerationrun())
-#    time.sleep(0.5)
+
+while True:
+    print(get_linear_accelerationrun())
+    time.sleep(0.5)
 print(linear_calibration())
