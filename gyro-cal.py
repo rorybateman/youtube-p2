@@ -1,5 +1,4 @@
 import mpu6050
-import Pin, I2C
 import time
 from time import sleep
 
