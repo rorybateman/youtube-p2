@@ -62,3 +62,4 @@ def gyro_calibration(calibration_time=10):
     offsets = [i/num_of_points for i in offsets] # we divide by the length to get the mean
     return offsets
   
+print(gyro_calibration())
