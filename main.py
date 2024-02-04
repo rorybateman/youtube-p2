@@ -25,9 +25,9 @@ print('MPU is Done Settling')
 
 def get_gyro():
     gyroscope_data = mpu6050.get_gyro_data()
-    gx= gyroscope_data.get('x')
-    gy= gyroscope_data.get('y')
-    gz= gyroscope_data.get('z')
+    gx= gyroscope_data.get('x') - 11.43
+    gy= gyroscope_data.get('y') -1.67
+    gz= gyroscope_data.get('z') -1.39
     return gx, gy, gz
 
 while True:
